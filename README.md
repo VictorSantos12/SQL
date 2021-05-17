@@ -64,9 +64,11 @@ Com isso, pode-se definir algumas das funcionalidades do SQl:
     sendo possível criar parâmetros para tais estruturas;
   - Permitir também o controle de acesso às tabelas e funções de um banco de dados.
 
+<br>
 
 <h1> Elementos de Banco de Dados </h1>
 
+<br>
 
 <h2> Tabelas </h2>
 
