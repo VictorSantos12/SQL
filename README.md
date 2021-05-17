@@ -72,11 +72,101 @@ Com isso, pode-se definir algumas das funcionalidades do SQl:
 <h2> SQL Server Management Studio </h2>
 
 
-O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usado para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
+O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usada para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
 sendo um dos ambientes que suportão e compilam comandos SQl.
 
 Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 
-<h2> Comandos SQL </h2>
+<h1> Comandos SQL </h1>
 
+
+Por possuir funções que abrangem um grande número de possibilidades, os comandos em SQL também possuem especificações quanto ao tipo de dado manipulado e as ações que serão realizadas. Eles são:
+
+
+<h2> DDL - Data Definition Language </h2>
+
+
+Possui a função de criar e estruturar os dados e objetos dentro de uma tabela, podendo incluir, alterar e excluir objetos:
+
+<strong>CREATE</strong> - Cria novos objetos e tabelas dentro do banco de dados e define novas entidades;
+
+<strong>DROP</strong> - Exclui entidades e tabelas inteiras de um banco de dados;
+
+<strong>ALTER</strong>  - Modifica objetos e tabelas existentes, podendo inserir ou excluir colunas, linhas e novos dados nas mesmas.
+
+
+<h2> DML - Data Manipulation Language  </h2>
+
+
+Por definição, manipula os dados presentes dentro das tabelas e do banco de dados em si, podendo incluir, alterar e mesmo excluir:
+
+<strong>SELECT</strong> - Permite selecionar e recuperar linhas e colunas das tabelas e do banco de dados respectivamente;
+
+<strong>INSERT</strong> - Insere dados em uma ou mais tabelas;
+
+<strong>UPDATE</strong> - Atualiza dados e funções nas tabelas do banco de dados;
+
+<strong>DELETE</strong> - Utilizado para excluir dados de uma ou mais tabelas.
+
+
+<h2> DCL - Data Control Language  </h2>
+
+
+Tem a função de controlar o acesso e gerenciar permissões em um banco de dados. Podendo exercer a função de limitador de ações realizadas pelo usuário dentro do banco de dados:
+
+<strong>GRANT</strong>  - Dá ao usuário o privilégios de acesso a informações e objetos contidos no banco de dados;
+
+<strong>REMOKE</strong>  - Anula as funções e privilégios de informações dados ao usuário pela função Grant; 
+
+<strong>DENY</strong>  - Restringe o acesso a determinada informação ou objeto impedindo que o usuário tenha uma permissão ou privilégio específicos. 
+
+
+<h2> DQL - Data Query Language  </h2>
+
+
+Permite a realização de consultas ao banco de dados, permitindo acesso a informações específicas presentes nas tabelas:
+
+<strong>SELECT</strong> - Permite a obtenção de registros específicos em diferente tabelas. 
+
+
+<h2> DTL - Data Transition Language  </h2>
+
+
+Se refere aos comandos de gerenciamento de transações em bancos de dados, podendo iniciar, confirmar ou desfazer uma transação:
+
+
+<strong>begin TRAN(ou TRANSITION)</strong> - É o marcador do início de uma transação no banco, e a mesma pode ou não ser finalizada;
+
+<strong>COMMIT</strong> - Responsável por enviar todos os dados contidos na transação, permanentemente, para o banco de dados;
+
+<strong>ROLLBACK</strong> - Tem a função de desfazer as alterações decorrentes da transação.
+
+
+<h1> Topos de Dados </h1>
+
+
+Por se tratar de uma linguagem voltada exclusivamente para o tratamento e controle de informações em bancos de dados, é notável a diversidade de tipos de dados com que ela trabalha. Informações contidas nos bancos podem variar e possuir inúmeros caracteres. Um CPF por exemplo, possui 11 dígitos, um nome pode possuir uma quantidade muito maior de caracteres, já o gênero do usuário pode ser representado por uma única letra. Números, sejam decimais ou inteiros, valores, datas, letras, nomes, gêneros, id, endereço, formação, instituição de ensino e mesmo a cor de um veículo podem ser dados presentes em algum banco de dados. A manipulação destas informações ocorre de formas diferentes de acordo com o tipo de dado em questão. Logo, é importante entender quais são os tipos de dados e como podem ser manipulados, usando os tipos de comandos anteriormente vistos.
+
+
+<h2> String </h2>
+
+Char - Cadeia de caracteres de valor fixo.
+
+VarChar - Cadeia de caracteres de valor variável. 
+
+Text - Número variável de caracteres de Texto.
+
+nChar - Cadeia de caracteres de valor fixo com espaço em branco.
+
+nVarChar - Cadeia de caracteres de valor variável com espaço em branco.
+
+Image - Tamanho variável.
+
+<h2></h2>
+
+<h2></h2>
+
+<h2></h2>
+
+<h2></h2>
