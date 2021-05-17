@@ -66,7 +66,9 @@ Com isso, pode-se definir algumas das funcionalidades do SQl:
 
 <br>
 
-<h1> Elementos de Banco de Dados </h1>
+<div align="center">
+  <h1> Elementos de Banco de Dados </h1>
+</div>
 
 <br>
 
