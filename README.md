@@ -16,42 +16,13 @@ de dados relacionais do mercado: Oracle, MySQL, MariaDB, PostgreSQL, Microsoft S
 <h2>Bancos de Dados Relacionais</h2>
 
 
-Um banco de dados relacional separa as de informações em classes. Essas classes são formadas a partir de semelhanças entre atributos, ou  seja: mesma tipo, modelo, cargo, etx. A função é agrupar informações do mesmo tipo. Essas classes formam tabelas, que possuem campos(colunas): Representa os atributos dos dados; registros(linhas): Dados de uma entidade única. A relação entre tais tabelas se torna uma informação relevante dentro do banco de dados.
+Um banco de dados relacional separa as informações em classes. Essas classes são formadas a partir de semelhanças entre atributos, ou  seja: mesma tipo, modelo, cargo, etc. A função é agrupar informações do mesmo tipo. Essas classes formam tabelas, que possuem campos(colunas): Representa os atributos dos dados; registros(linhas): Dados de uma entidade única. A relação entre tais tabelas se torna uma informação relevante dentro do banco de dados.
 
 
 <h2> Funções do SQL </h2>
 
 
-Um exemplo prático das funcionalidades de uma linguagem de query aplicada a um banco de dados relacional e a administração de dados empresariais. Empresas de diversas proporções utilizam de informação para gerir seus processos, seja uma sturtup ou uma multinacional,
-o registro e consulta de infiormações é imprescindível. Os bancos de dados suprem tal necessidade de forma eficiente há banse tempo.
-Para ilustrar o uso dessa tecnologia imagine o seguinte processo de administração de dados:
-
-Imagine que uma série de informações sobre novos funcionários seram registradas no banco de dados de uma empresa contrarante. Essas 
-infromações consistem em: um identificador individual, o salário e o seto que cada um deles integra. Além disso, a empresa possui vários
-setores distintos, cada qual com sua lista de funcionários:
-
-
-<h3> Setores </h3>
-<br>
-
-|        NumSetor         |             NomeDepart             |  
-| ----------------------- | ---------------------------------- |  
-|           01	          |          Recursos Humanos	       | 
-|           02	          |        Limpeza e Manutenção        |  
-|           03	          |      Tecnologia da informação      | 
-
-
-<h3> Empregados do Departamento de TI </h3>
-<br>
-
-|         NumEmp          |      Salário      |      Setor     |
-| ----------------------- | ----------------- | -------------- |
-|          016            |    R$ 2,520,60    |       03       |  
-|          034            |    R$ 3000,00     |       03       |
-|          057            |    R$ 4,500,10    |       03       |
-
-
-A relação entre essas tabelas fica clara graças ao compartilhamento de dados semelhantes. Estes dados representam a relação que as duas tabelas têm, sendo chamado de chave estrangeira(sendo as chaves e as tabelas os dois elementos de composição básicos de um banco de dados relacional). O número que determina o setor de Tecnologia da Informação (03) mostra que ele é mais um de uma lista de setores. Ou seja, caso eu seja necessário saber o salário de um determinado funcionário do setor d 03, primeiramente, deve-se acessar a lista de setores da empresa, acessar o setor 03, e em seguida identificar o empregado através do identificador, nesse caso o número do empregado. Quando surge a necessidade de manipular algum dado de alguma tabela, feze-se uso de uma linguagem de manipulação de bancos de dados relacionais, uma delas é a SQL.
+Um exemplo prático das funcionalidades de uma linguagem de query aplicada a um banco de dados relacional é a administração de dados empresariais. Empresas de diversas proporções utilizam de informação para gerir seus processos, seja uma sturtup ou uma multinacional, o registro e consulta de infiormações é imprescindível. Os bancos de dados suprem tal necessidade de forma eficiente há banstante tempo.
 
 Com isso, pode-se definir algumas das funcionalidades do SQl:
 
@@ -86,7 +57,7 @@ Estruturas destinadas ao armazenamento de dados, compostas de um número limitad
 <h2> Chaves </h2>
 
 
-Campos, ou conjunto de campos, com o objetivo de identificar unicamente um registro e ou estabelecer relações entre registros.
+Campos, ou conjunto de campos, têm o objetivo de identificar unicamente um registro e ou estabelecer relações entre registros.
 
 
 <div align="center">
@@ -105,7 +76,7 @@ Campos, ou conjunto de campos, que podem identificar unicamente um registro.
 </div>
 
 
-<h2> Chaves Primárias(PRIMARY KEY)</h2>
+<h2> Chaves Primárias( PRIMARY KEY )</h2>
 
 
 Chaves candidatas escolhidas como identificadoras de registros em suas tabelas.
@@ -123,7 +94,7 @@ Chaves candidatas escolhidas como identificadoras de registros em suas tabelas.
 
 
 
-<h2> Chaves Estrangeiras(FOREIGN KEY) </h2>
+<h2> Chaves Estrangeiras( FOREIGN KEY ) </h2>
 
 
 Campo, ou conjunto de campos, de uma tabela que se liga a chave primaria de uma tabela relacionada.
@@ -205,10 +176,10 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 <strong>ROLLBACK</strong> - Tem a função de desfazer as alterações decorrentes da transação.
 
 
-<h1> Topos de Dados </h1>
+<h1> Tipos de Dados </h1>
 
 
-Por se tratar de uma linguagem voltada exclusivamente para o tratamento e controle de informações em bancos de dados, é notável a diversidade de tipos de dados com que ela trabalha. Informações contidas nos bancos podem variar e possuir inúmeros caracteres. Um CPF por exemplo, possui 11 dígitos, um nome pode possuir uma quantidade muito maior de caracteres, já o gênero do usuário pode ser representado por uma única letra. Números, sejam decimais ou inteiros, valores, datas, letras, nomes, gêneros, id, endereço, formação, instituição de ensino e mesmo a cor de um veículo podem ser dados presentes em algum banco de dados. A manipulação destas informações ocorre de formas diferentes de acordo com o tipo de dado em questão. Logo, é importante entender quais são os tipos de dados e como podem ser manipulados, usando os tipos de comandos anteriormente vistos.
+Por se tratar de uma linguagem voltada exclusivamente para o tratamento e controle de informações em bancos de dados, é notável a diversidade de tipos de dados com que o SQL trabalha. Informações contidas nos bancos podem variar e possuir inúmeros caracteres. Um CPF por exemplo possui 11 dígitos, um nome pode possuir uma quantidade muito maior de caracteres, já o gênero do usuário pode ser representado por uma única letra. Números, sejam decimais ou inteiros; valores, datas, letras, nomes, gêneros, id, endereço, formação, instituição de ensino e mesmo a cor de um veículo podem ser dados presentes em algum banco de dados. A manipulação destas informações ocorre de formas diferentes de acordo com o tipo de dado em questão. Logo, é importante entender quais são os tipos de dados e como podem ser manipulados, usando os tipos de comandos anteriormente vistos.
 
 
 <h2> String </h2>
