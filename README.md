@@ -34,11 +34,11 @@ setores distintos, cada qual com sua lista de funcionários:
 <h3> Setores </h3>
 
 
-|        NumSetor         |             NomeDepart             |  
-| ----------------------- | ---------------------------------- |  
-|           01	          |          Recursos Humanos	       | 
-|           02	          |        Limpeza e Manutenção        |  
-|           03	          |      Tecnologia da informação      | 
+|        NumSetor         |             NomeDepart             |  |        NumSetor         |             NomeDepart             |  
+| ----------------------- | ---------------------------------- |  | ----------------------- | ---------------------------------- |  
+|           01	          |          Recursos Humanos	       |  |           01	        |          Recursos Humanos	         | 
+|           02	          |        Limpeza e Manutenção        |  |           02	        |        Limpeza e Manutenção        | 
+|           03	          |      Tecnologia da informação      |  |           03	        |      Tecnologia da informação      | 
 
 
 <h3> Empregados do Departamento de TI </h3>
@@ -75,7 +75,7 @@ Com isso, pode-se definir algumas das funcionalidades do SQl:
 O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usado para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
 sendo um dos ambientes que suportão e compilam comandos SQl.
 
-Documentação e Processo de Instalação da versão mais 2021: https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
+Documentação e Processo de Instalação da versão 2021: https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15
 
 
 <h2> Comandos SQL </h2>
