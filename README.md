@@ -244,6 +244,7 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 |  ALTER TABLE my_table	ALTER COLUMN nome VARCHAR(50)    	   |  Redfine tipo da coluna                |
 |  ALTER TABLE my_table	DROP COLUMN	nome					   |  Apaga coluna especificada             |
 |  DROP TABLE my_table                                         |  Apaga tabela especificada             |
+
 |                         Comandos (DML)                       |               Descrição                |
 | ------------------------------------------------------------ | -------------------------------------- |
 |  CREATE DATABASE my_base_name                                |  Cria banco de dados                   |
