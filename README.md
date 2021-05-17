@@ -251,11 +251,6 @@ DateTime2 - De 1 de Janeiro de 0001 a 31 de Dezembro de 9999.
 Time - Armazena tempo.
 
 
-<h2></h2>
-
-<h2></h2>
-
-
 <h2> SQL Server Management Studio </h2>
 
 
