@@ -51,9 +51,7 @@ setores distintos, cada qual com sua lista de funcionários:
 |          057            |    R$ 4,500,10    |       03       |
 
 
-A relação entre essas tabelas fica clara graças ao compartilhamento de dados semelhantes. Estes dados representam a relação que as duas tabelas têm, sendo chamado de chave estrangeira. O número que determina o setor de Tecnologia da Informação (03) mostra que ele é mais um de uma lista de setores. Ou seja, caso eu seja necessário  
-saber o salário de um determinado funcionário do setor d 03, primeiramente, deve-se acessar a lista de setores da empresa, acessar o setor 03, e em seguida identificar
-o empregado através do identificador, nesse caso o número do empregado. Quando surge a necessidade de manipular algum dado de alguma tabela, feze-se uso de uma linguagem de manipulação de bancos de dados relacionais, uma delas é a SQL.
+A relação entre essas tabelas fica clara graças ao compartilhamento de dados semelhantes. Estes dados representam a relação que as duas tabelas têm, sendo chamado de chave estrangeira(sendo as chaves e as tabelas os dois elementos de composição básicos de um banco de dados relacional). O número que determina o setor de Tecnologia da Informação (03) mostra que ele é mais um de uma lista de setores. Ou seja, caso eu seja necessário saber o salário de um determinado funcionário do setor d 03, primeiramente, deve-se acessar a lista de setores da empresa, acessar o setor 03, e em seguida identificar o empregado através do identificador, nesse caso o número do empregado. Quando surge a necessidade de manipular algum dado de alguma tabela, feze-se uso de uma linguagem de manipulação de bancos de dados relacionais, uma delas é a SQL.
 
 Com isso, pode-se definir algumas das funcionalidades do SQl:
 
@@ -69,13 +67,63 @@ Com isso, pode-se definir algumas das funcionalidades do SQl:
 </ul>
 
 
-<h2> SQL Server Management Studio </h2>
+<h1> Elementos de Banco de Dados </h1>
 
 
-O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usada para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
-sendo um dos ambientes que suportão e compilam comandos SQl.
+<h2> Tabelas </h2>
 
-Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+
+Estruturas destinadas ao armazenamento de dados, compostas de um número limitado de colunas (Campos) e um número ilimitado de linhas (Registros ou Tuplas).
+
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/61476935/118540858-69b4db80-b727-11eb-9387-6b587a579455.png">
+</div>
+
+
+<h2> Chaves </h2>
+
+
+Campos, ou conjunto de campos, com o objetivo de identificar unicamente um registro e ou estabelecer relações entre registros.
+
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/61476935/118540943-8224f600-b727-11eb-9250-eca534b61f19.png">
+</div>
+
+
+<h2> Chaves Candidatas ou Alternativas </h2>
+
+
+Campos, ou conjunto de campos, que podem identificar unicamente um registro.
+
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/61476935/118541020-9a951080-b727-11eb-9396-ee5489fac8bd.png">
+</div>
+
+
+<h2> Chaves Primárias </h2>
+
+
+Chaves candidatas escolhidas como identificadoras de registros em suas tabelas.
+
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/61476935/118541101-b6001b80-b727-11eb-83ae-6a44202875ad.png">
+</div>
+
+
+<h2> Chaves Estrangeiras </h2>
+
+
+Campo, ou conjunto de campos, de uma tabela que se liga a chave primaria de uma tabela relacionada.
+
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/61476935/118542387-53a81a80-b729-11eb-8bcc-ec33be749ce5.png">
+</div>
+
 
 
 <h1> Comandos SQL </h1>
@@ -136,7 +184,7 @@ Permite a realização de consultas ao banco de dados, permitindo acesso a infor
 Se refere aos comandos de gerenciamento de transações em bancos de dados, podendo iniciar, confirmar ou desfazer uma transação:
 
 
-<strong>begin TRAN(ou TRANSITION)</strong> - É o marcador do início de uma transação no banco, e a mesma pode ou não ser finalizada;
+<strong>BEGIN TRAN(ou TRANSITION)</strong> - É o marcador do início de uma transação no banco, e a mesma pode ou não ser finalizada;
 
 <strong>COMMIT</strong> - Responsável por enviar todos os dados contidos na transação, permanentemente, para o banco de dados;
 
@@ -151,6 +199,7 @@ Por se tratar de uma linguagem voltada exclusivamente para o tratamento e contro
 
 <h2> String </h2>
 
+
 Char - Cadeia de caracteres de valor fixo.
 
 VarChar - Cadeia de caracteres de valor variável. 
@@ -163,10 +212,40 @@ nVarChar - Cadeia de caracteres de valor variável com espaço em branco.
 
 Image - Tamanho variável.
 
-<h2></h2>
+
+<h2>Numéricos</h2>
+
+
+Bit - Número inteiro, podendo ser 0, 1 ou NULL.
+
+Tinyint - Número inteiros de 0 a 255.
+
+Decimal - Cadeia de valores decimais.
+
+Integer - Números inteiros exatos.
+
+Money - Cadeia de valores monetários. 
+
+
+<h2>Data</h2>
+
+
+DateTime - De 1 de Janeiro de 1753 a 31 de Dezembro de 9999.
+
+DateTime2 - De 1 de Janeiro de 0001 a 31 de Dezembro de 9999.
+
+Time - Armazena tempo.
+
 
 <h2></h2>
 
 <h2></h2>
 
-<h2></h2>
+
+<h2> SQL Server Management Studio </h2>
+
+
+O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usada para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
+sendo um dos ambientes que suportão e compilam comandos SQl.
+
+Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
