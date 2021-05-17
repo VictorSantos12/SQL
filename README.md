@@ -103,7 +103,7 @@ Campos, ou conjunto de campos, que podem identificar unicamente um registro.
 </div>
 
 
-<h2> Chaves Primárias </h2>
+<h2> Chaves Primárias(PRIMARY KEY)</h2>
 
 
 Chaves candidatas escolhidas como identificadoras de registros em suas tabelas.
@@ -114,7 +114,14 @@ Chaves candidatas escolhidas como identificadoras de registros em suas tabelas.
 </div>
 
 
-<h2> Chaves Estrangeiras </h2>
+- Identifica de forma única cada registro em uma tabela de banco de dados;
+- Chaves primárias devem conter valores únicos;
+- Uma coluna de chave primária não pode conter valores Null; 
+- Cada tabela deve conter apenas uma chave primária, mas uma chave primária pode ser uma chave estrangeira em outra tabela.
+
+
+
+<h2> Chaves Estrangeiras(FOREIGN KEY) </h2>
 
 
 Campo, ou conjunto de campos, de uma tabela que se liga a chave primaria de uma tabela relacionada.
@@ -123,6 +130,11 @@ Campo, ou conjunto de campos, de uma tabela que se liga a chave primaria de uma 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/61476935/118542387-53a81a80-b729-11eb-8bcc-ec33be749ce5.png">
 </div>
+
+
+- Uma Foreign Key sinaliza um relacionamento entre tabelas;
+- A Foreign Key é a chave primária de uma tabela dentro da tabela com a qual ela se relaciona.
+- Uma Foreign Key pode ser definida como Null; 
 
 
 
