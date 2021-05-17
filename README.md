@@ -101,7 +101,7 @@ Campo, ou conjunto de campos, de uma tabela que se liga a chave primaria de uma 
 
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/61476935/118542387-53a81a80-b729-11eb-8bcc-ec33be749ce5.png">
+  <img src="https://user-images.githubusercontent.com/61476935/118550749-70495000-b733-11eb-82e5-8acd98ac0f47.png">
 </div>
 
 
