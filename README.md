@@ -55,16 +55,14 @@ A relação entre essas tabelas fica clara graças ao compartilhamento de dados 
 
 Com isso, pode-se definir algumas das funcionalidades do SQl:
 
-<ul>
-  <li>Permitir acesso a dados em um SGBDR, ou Sistema Gerenciador de Banco de Dados Relacionais;</li>
-  <li>Permitir manipular e definir dados em um banco de dados;</li>
-  <li>Pode ser utilizado em várias outras linguagens por meio de bibliotecas e módulos SQL;</li>
-  <li>Permitir criar e deletar: dados, tabelas e os próprios bancos de dados;</li>
-  <li>
-      Permitir a criação de Stored Procedures, que são técnicas avançadas de controle de dados e envio de resultados por meio da criação de estruturas de repetição, sendo possível criar parâmetros para tais estruturas;
-  </li>
-  <li>Permitir também o controle de acesso às tabelas e funções de um banco de dados.</li>
-</ul>
+
+  - Permitir acesso a dados em um SGBDR, ou Sistema Gerenciador de Banco de Dados Relacionais;
+  - Permitir manipular e definir dados em um banco de dados;
+  - Pode ser utilizado em várias outras linguagens por meio de bibliotecas e módulos SQL;
+  - Permitir criar e deletar: dados, tabelas e os próprios bancos de dados;
+  - Permitir a criação de Stored Procedures, que são técnicas avançadas de controle de dados e envio de resultados por meio da criação de estruturas de repetição,
+    sendo possível criar parâmetros para tais estruturas;
+  - Permitir também o controle de acesso às tabelas e funções de um banco de dados.
 
 
 <h1> Elementos de Banco de Dados </h1>
