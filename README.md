@@ -231,17 +231,29 @@ sendo um dos ambientes que suportão e compilam comandos SQl.
 Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 
-<h2> Executando Comandos Básicos </h2>
+<h2> Estudando Comandos </h2>
 
-
-
-|                          Comando                           |                Descrição               |
-| ---------------------------------------------------------- | -------------------------------------- |
-|  CREATE DATABASE my_base_name                              |           Cria Banco de dados          |
-|  USE my_bass_name                                          |          Acessa Banco de dados         |
-|  ALTER DATABASE my_base_name MODIFY NAME my_new_base_name  |          Altera Banco de dados         |
-     
-
+ 
+|                         Comandos (DDL)                       |               Descrição                |
+| ------------------------------------------------------------ | -------------------------------------- |
+|  CREATE DATABASE my_base_name                                |  Cria banco de dados                   |
+|  USE my_bass_name                                            |  Acessa banco de dados                 |
+|  ALTER DATABASE my_base_name MODIFY NAME = my_new_base_name  |  Altera banco nomw do dados            |
+|  CREATE TABLE my_table ( campo  tipo  [NOT NULL], ... )      |  Cria tabela e define seus campos      |
+|  ALTER TABLE my_table ADD  nome  tipo  [NOT NULL]            |  Adiciona um novo campo a tabela       |   
+|  ALTER TABLE my_table	ALTER COLUMN nome VARCHAR(50)    	   |  Redfine tipo da coluna                |
+|  ALTER TABLE my_table	DROP COLUMN	nome					   |  Apaga coluna especificada             |
+|  DROP TABLE my_table                                         |  Apaga tabela especificada             |
+|                         Comandos (DML)                       |               Descrição                |
+| ------------------------------------------------------------ | -------------------------------------- |
+|  CREATE DATABASE my_base_name                                |  Cria banco de dados                   |
+|  USE my_bass_name                                            |  Acessa banco de dados                 |
+|  ALTER DATABASE my_base_name MODIFY NAME = my_new_base_name  |  Altera banco nomw do dados            |
+|  CREATE TABLE my_table ( campo  tipo  [NOT NULL], ... )      |  Cria tabela e define seus campos      |
+|  ALTER TABLE my_table ADD  nome  tipo  [NOT NULL]            |  Adiciona um novo campo a tabela       |   
+|  ALTER TABLE my_table	ALTER COLUMN nome VARCHAR(50)    	   |  Redfine tipo da coluna                |
+|  ALTER TABLE my_table	DROP COLUMN	nome					   |  Apaga coluna especificada             |
+|  DROP TABLE my_table                                         |  Apaga tabela especificada             |
 
     
      
