@@ -229,3 +229,20 @@ O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de 
 sendo um dos ambientes que suportão e compilam comandos SQl.
 
 Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+
+
+<h2> Executando Comandos Básicos </h2>
+
+
+
+|                          Comando                           |                Descrição               |
+| ---------------------------------------------------------- | -------------------------------------- |
+|  CREATE DATABASE my_base_name                              |           Cria Banco de dados          |
+|  USE my_bass_name                                          |          Acessa Banco de dados         |
+|  ALTER DATABASE my_base_name MODIFY NAME my_new_base_name  |          Altera Banco de dados         |
+     
+
+
+    
+     
+    
