@@ -357,7 +357,9 @@ A álgebra relacional é uma forma de cálculo sobre conjuntos ou relações. Pr
 
 <h2> Seleção (σ)</h2>
 
-    σ predicado ( Relação )
+   <div align="center">
+     <img src="https://user-images.githubusercontent.com/61476935/118680798-6aa44680-b7d5-11eb-93e9-ebd2eb0446a9.png">
+   </div>
 
 Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que satisfaçam determinada condição ou predicado. Sendo predicado a condição que será aplicada a seleção, e sendo a relação a relação ou tabela de onde serão obtidos os dados.
 
