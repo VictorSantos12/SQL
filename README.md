@@ -240,7 +240,7 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 
     CREATE DATABASE  my_base_name  
 
-
+<br>
 
     --Acessa banco de dados     
     
