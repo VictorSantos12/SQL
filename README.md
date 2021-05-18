@@ -237,7 +237,8 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 <h2> Comandos DDL  </h2>
 
     --Cria banco de dados 
-    <strong>CREATE DATABASE</strong> my_base_name  
+    
+    CREATE DATABASE my_base_name  
 
 | ---------------------------------------------------------------------------------------------- | -------------------------------------- |
 |  <strong>USE</strong> my_bass_name                                                             |  Acessa banco de dados                 |
