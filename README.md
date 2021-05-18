@@ -110,6 +110,51 @@ Campo, ou conjunto de campos, de uma tabela que se liga a chave primaria de uma 
 - Uma Foreign Key pode ser definida como Null; 
 
 
+<h1> Tipos de Dados </h1>
+
+
+Por se tratar de uma linguagem voltada exclusivamente para o tratamento e controle de informações em bancos de dados, é notável a diversidade de tipos de dados com que o SQL trabalha. Informações contidas nos bancos podem variar e possuir inúmeros caracteres. Um CPF por exemplo possui 11 dígitos, um nome pode possuir uma quantidade muito maior de caracteres, já o gênero do usuário pode ser representado por uma única letra. Números, sejam decimais ou inteiros; valores, datas, letras, nomes, gêneros, id, endereço, formação, instituição de ensino e mesmo a cor de um veículo podem ser dados presentes em algum banco de dados. A manipulação destas informações ocorre de formas diferentes de acordo com o tipo de dado em questão. Logo, é importante entender quais são os tipos de dados e como podem ser manipulados, usando os tipos de comandos anteriormente vistos.
+
+
+<h2> String </h2>
+
+
+Char - Cadeia de caracteres de valor fixo.
+
+VarChar - Cadeia de caracteres de valor variável. 
+
+Text - Número variável de caracteres de Texto.
+
+nChar - Cadeia de caracteres de valor fixo com espaço em branco.
+
+nVarChar - Cadeia de caracteres de valor variável com espaço em branco.
+
+Image - Tamanho variável.
+
+
+<h2>Numéricos</h2>
+
+
+Bit - Número inteiro, podendo ser 0, 1 ou NULL.
+
+Tinyint - Número inteiros de 0 a 255.
+
+Decimal - Cadeia de valores decimais.
+
+Integer - Números inteiros exatos.
+
+Money - Cadeia de valores monetários. 
+
+
+<h2>Data</h2>
+
+
+DateTime - De 1 de Janeiro de 1753 a 31 de Dezembro de 9999.
+
+DateTime2 - De 1 de Janeiro de 0001 a 31 de Dezembro de 9999.
+
+Time - Armazena tempo.
+
 
 <h1> Comandos SQL </h1>
 
@@ -175,60 +220,6 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 
 <strong>ROLLBACK</strong> - Tem a função de desfazer as alterações decorrentes da transação.
 
-
-<h1> Tipos de Dados </h1>
-
-
-Por se tratar de uma linguagem voltada exclusivamente para o tratamento e controle de informações em bancos de dados, é notável a diversidade de tipos de dados com que o SQL trabalha. Informações contidas nos bancos podem variar e possuir inúmeros caracteres. Um CPF por exemplo possui 11 dígitos, um nome pode possuir uma quantidade muito maior de caracteres, já o gênero do usuário pode ser representado por uma única letra. Números, sejam decimais ou inteiros; valores, datas, letras, nomes, gêneros, id, endereço, formação, instituição de ensino e mesmo a cor de um veículo podem ser dados presentes em algum banco de dados. A manipulação destas informações ocorre de formas diferentes de acordo com o tipo de dado em questão. Logo, é importante entender quais são os tipos de dados e como podem ser manipulados, usando os tipos de comandos anteriormente vistos.
-
-
-<h2> String </h2>
-
-
-Char - Cadeia de caracteres de valor fixo.
-
-VarChar - Cadeia de caracteres de valor variável. 
-
-Text - Número variável de caracteres de Texto.
-
-nChar - Cadeia de caracteres de valor fixo com espaço em branco.
-
-nVarChar - Cadeia de caracteres de valor variável com espaço em branco.
-
-Image - Tamanho variável.
-
-
-<h2>Numéricos</h2>
-
-
-Bit - Número inteiro, podendo ser 0, 1 ou NULL.
-
-Tinyint - Número inteiros de 0 a 255.
-
-Decimal - Cadeia de valores decimais.
-
-Integer - Números inteiros exatos.
-
-Money - Cadeia de valores monetários. 
-
-
-<h2>Data</h2>
-
-
-DateTime - De 1 de Janeiro de 1753 a 31 de Dezembro de 9999.
-
-DateTime2 - De 1 de Janeiro de 0001 a 31 de Dezembro de 9999.
-
-Time - Armazena tempo.
-
-
-<h2> SQL Server Management Studio </h2>
-
-
-O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usada para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
-sendo um dos ambientes que suportão e compilam comandos SQl.
-
-Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 <br>
 <div align="center">
@@ -296,6 +287,10 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 |  <strong>DELETE FROM</strong> my_table <strong>WHERE</strong> parâmetro                                  |  Deleta elemento de acordo com o parâmetro especificado  |
 
 
-    
-     
-    
+<h2> SQL Server Management Studio </h2>
+
+
+O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usada para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
+sendo um dos ambientes que suportão e compilam comandos SQl.
+
+Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
