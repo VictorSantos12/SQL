@@ -246,12 +246,12 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 |  <strong>DROP TABLE</strong> my_table                                                          |  Apaga tabela especificada             |
 
 
-|                         Comandos DML                         |                          Descrição                       |
-| ------------------------------------------------------------ | -------------------------------------------------------- |
-|  INSERT INTO my_table (campo_1, ...)  VALUES (valor_1, ...)  |  Insere dados na tablea                                  |
-|  USE my_bass_name                                            |  Acessa banco de dados                                   |
-|  UPDATE my_table  SET nova definição  WHERE  parâmetro       |  Atualiza tabela de acordo com o parâmetro especificado  |
-|  DELETE FROM my_table WHERE parâmetro                        |  Deleta elemento de acordo com o parâmetro especificado  |
+|                                                 Comandos DML                                             |                          Descrição                       |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+|  <strong>INSERT INTO</strong> my_table (campo_1, ...) <strong>VALUES</strong> (valor_1, ...)             |  Insere dados na tablea                                  |
+|  <strong>USE</strong> my_bass_name                                                                       |  Acessa banco de dados                                   |
+|  <strong>UPDATE</strong> my_table <strong>SET</strong> nova definição <strong>WHERE</strong> parâmetro   |  Atualiza tabela de acordo com o parâmetro especificado  |
+|  <strong>DELETE FROM</strong> my_table <strong>WHERE</strong> parâmetro                                  |  Deleta elemento de acordo com o parâmetro especificado  |
 
 
     
