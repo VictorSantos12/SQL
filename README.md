@@ -240,6 +240,8 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 
     CREATE DATABASE  my_base_name  
 
+
+
     --Acessa banco de dados     
     
     USE  my_bass_name 
@@ -260,7 +262,7 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
     ALTER TABLE my_table ADD  <campo1> <tipo>  [NOT NULL] 
 
     --Redefine tipo da coluna
-    
+
     ALTER TABLE  my_table  ALTER COLUMN  <campo1>  <tipo>  
     
     --Apaga coluna especificada  
