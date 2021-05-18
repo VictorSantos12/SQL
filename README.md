@@ -417,7 +417,20 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 
     SELECT * FROM Tabela WHERE condição;
 
-> Operadores: <br> > | >= | < | <= | = | <> 
+> Operadores Relacionais: <br><br>  >  |  >=  |  <  |  <= |  =  |  <> 
+
+
+<h2> Comandos DQL - A cláusula WHERE e os Operadores Lógicos </h2>
+
+
+|      O.R.     |        CONSULTA EM ÁLGEBRA RELACIONAL       |                       CONSULTA SQL
+| ------------- | ------------------------------------------- | ---------------------------------------------------------- |
+| IN            |  σ matricula IN (1,3,5,7) ( Agenda )        |  SELECT * FROM Agenda WHERE matricula IN (1,3,5,7);        |
+| BETWEEN       |  σsalario BETWEEN 1500 AND 2000 ( Agenda )  |  SELECT * FROM Agenda WHERE salario BETWEEN 1500 AND 2000; | 
+| LIKE ( %, _ ) |  σ nome LIKE '%silva%' ( Agenda )           |  SELECT * FROM Agenda WHERE nome LIKE ‘%silva%';           |
+| IS NULL       |  σsalario IS NULL ( Agenda )                |  SELECT * FROM Agenda WHERE salario IS NULL;               |
+| NOT or I=     |  Nega o predicado nas consultas.                                                                         |
+
 
 
 <h2> Comandos DQL - Cláusula WHERE </h2>
