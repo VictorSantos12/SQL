@@ -455,17 +455,54 @@ Exemplo: Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda
     SELECT Sexo, Count(*) AS 'Qtd.'
     FROM Agenda
     GROUP BY Sexo;
-    
+
 
 <h2> Comandos DQL - Cláusula HAVING </h2>
 
 
+Tem função semelhante a cláusula WHERE, porém sua aplicação se restringe a consulta agrupadas (GROUP BY).
+
+    SELECT * FROM Tabela GROUP BY coluna HAVING predicado;
+
+Exemplo: Conte a quantidade de pessoas cadastradas, por profissão, na tabela Agenda, mostrando apenas as do sexo masculino.
+
+    SELECT Profissao, Count(*) AS 'Qtd.'
+    FROM Agenda
+    GROUP BY Profissao
+    HAVING Sexo = 'M';
+    
+    Obs. A cláusula HAVING funciona como a cláusula WHERE em tabelas agrupadas.
+
+
 <h2> Comandos DQL - Cláusula ORDER BY </h2>
 
+Tem função de ordenar dados em uma consulta SQL. Pode utilizar o complemento ASC (para ordenação ascendente) e DESC (para ordenação descendente).
 
-<h2> Comandos DQL - Cláusula TOP </h2>
+    SELECT * FROM Tabela ORDER BY coluna ASC/DESC;
+
+Exemplo: Selecione as colunas Profissao e Nome, na tabela Agenda, ordenando Profissao em ordem ascendente e Nome em ordem descendente.
+
+    SELECT Profissao, Nome
+    FROM Agenda
+    ORDER BY Profissao, Nome DESC;
+    
+    Obs. A cláusula ASC pode ser omitida no caso de ordenação ascendente.
 
 
+<h2> Comandos DQL - Cláusula TOP(n) </h2>
+
+
+Tem função de selecionar as n primeiras tuplas de uma consulta.
+
+    SELECT TOP(n) * FROM Tabela;
+
+Exemplo: Mostre todos os registros dos três maiores salários na tabela Agenda.
+
+    SELECT TOP (3) *
+    FROM Agenda
+    ORDER BY Salario DESC;
+
+    
 <h2> Restrição de Domínio </h2>
 
 
