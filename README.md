@@ -221,11 +221,11 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 <strong>ROLLBACK</strong> - Tem a função de desfazer as alterações decorrentes da transação.
 
 
-<br>
+
 <div align="center">
   <h1> Estudando Comandos </h1>
 </div>
-<br>
+
 
 <h2> Comandos DDL </h2>
 
