@@ -449,9 +449,9 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 
 Tem a função de agrupar dados semelhantes em uma consulta SQL
 
-    SELECT * FROM Tabela GROUP BY coluna;
+> SELECT * FROM Tabela GROUP BY coluna;
 
-  >Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda: <br><br> SELECT Sexo, Count(*) AS 'Qtd.'<br>FROM Agenda <br>GROUP BY Sexo;
+    Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda: <br><br> SELECT Sexo, Count(*) AS 'Qtd.'<br>FROM Agenda <br>GROUP BY Sexo;
 
 <h2> Comandos DQL - Cláusula GROUP BY </h2>
 
