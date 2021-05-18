@@ -230,13 +230,16 @@ sendo um dos ambientes que suportão e compilam comandos SQl.
 
 Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
-
+<br>
 <h2> Estudando Comandos </h2>
+<br>
 
- 
-|                                         Comandos DDL                                           |               Descrição                |
+<h2> Comandos DDL  </h2>
+
+    --Cria banco de dados 
+    <strong>CREATE DATABASE</strong> my_base_name  
+
 | ---------------------------------------------------------------------------------------------- | -------------------------------------- |
-|  <strong>CREATE DATABASE</strong> my_base_name                                                 |  Cria banco de dados                   |
 |  <strong>USE</strong> my_bass_name                                                             |  Acessa banco de dados                 |
 |  <strong>ALTER DATABASE</strong> my_base_name <strong>MODIFY NAME</strong> = my_new_base_name  |  Altera nome do banco dedados          |
 |  <strong>CREATE TABLE</strong> my_table ( campo  tipo  [NOT NULL], ... )                       |  Cria tabela e define seus campos      |
