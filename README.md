@@ -344,12 +344,46 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
     FROM  <Tabela>;
     
     --Selecionando e nomeando colunas de uma tabela
-    
+
     SELECT  <Coluna1 AS Nome1, Coluna2 AS Nome2>
     FROM  <Tabela>;
 
 
-<h2> SQL Server Management Studio </h2>
+<h2> Comandos DQL - Álgebra Relacional </h2>
+
+
+<h2> Seleção (σ)</h2>
+
+
+<h2> Projeção (π)</h2>
+
+
+<h2> Seleção (σ) e Projeção (π) </h2>
+
+
+<h2> Ordenação (τ) </h2>
+
+
+<h2> Comandos DQL - Cláusula WHERE </h2>
+
+
+<h2> Comandos DQL - Cláusula WHERE </h2>
+
+
+<h2> Comandos DQL - Cláusula GROUP BY </h2>
+
+
+<h2> SQL Server Management HAVING </h2>
+
+
+<h2> Comandos DQL - Cláusula ORDER BY </h2>
+
+
+<h2> Comandos DQL - Cláusula TOP </h2>
+
+
+<h2> Restrição de Domínio </h2>
+
 
 
 O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usada para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
