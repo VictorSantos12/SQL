@@ -327,7 +327,7 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 - ORDER BY - Especifica a coluna ou as colunas que serão ordenadas na consulta e a forma de ordenação(ascendente <ASC> ou descendente <DESC>).
 
 
-<h2> Cnsultando Dados </h2>
+<h2> Consultando Dados </h2>
 
     --Seleciona todas as colunas * de uma tabela
 
