@@ -413,6 +413,13 @@ Selecione todos os dados referentes as colunas Matricula e Nome, da tabela Agend
 <h2> Comandos DQL - Cláusula WHERE </h2>
 
 
+Tem a função de estabelecer um predicado, condição para filtrar dados através da utilização de operadores lógicos, em uma consulta SQL.
+
+    SELECT * FROM Tabela WHERE condição;
+
+> Operadores: <br> > | >= | < | <= | = | <> 
+
+
 <h2> Comandos DQL - Cláusula WHERE </h2>
 
 
