@@ -231,7 +231,9 @@ sendo um dos ambientes que suportão e compilam comandos SQl.
 Documentação e processo de instalação da versão 2021: [https://docs.microsoft.com](https://docs.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 <br>
-<h1> Estudando Comandos </h1>
+<div align="center">
+  <h1> Estudando Comandos </h1>
+</div>
 <br>
 
 <h2> Comandos DDL  </h2>
@@ -246,9 +248,13 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
     
     USE  my_bass_name 
 
+<br>
+
     --Altera nome do banco dedados 
 
     ALTER DATABASE  my_base_name  MODIFY NAME  =  my_new_base_name  
+
+<br>
 
     --Cria tabela e define seus campos
 
@@ -257,17 +263,25 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
                             [PRIMARY KEY (campo1,campo2,...),
                             [FOREIGN KEY (campo) REFERENCES tabela2 );
 
+<br>
+
     --Adiciona um novo campo a tabela  
 
     ALTER TABLE my_table ADD  <campo1> <tipo>  [NOT NULL] 
 
+<br>
+
     --Redefine tipo da coluna
 
-    ALTER TABLE  my_table  ALTER COLUMN  <campo1>  <tipo>  
+    ALTER TABLE  my_table  ALTER COLUMN  <campo1>  <tipo>
+
+<br>
     
     --Apaga coluna especificada  
       	  
-    ALTER TABLE  my_table  DROP COLUMN	<nome>	
+    ALTER TABLE  my_table  DROP COLUMN	<nome>
+
+<br>
     
     --Apaga tabela especificada    
     		           
