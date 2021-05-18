@@ -227,7 +227,7 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 </div>
 <br>
 
-<h2> Comandos DDL  </h2>
+<h2> Comandos DDL </h2>
 
     --Cria banco de dados 
 
@@ -279,12 +279,30 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
     DROP TABLE  tabela1                                                      
 
 
-|                                                 Comandos DML                                             |                          Descrição                       |
-| -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-|  <strong>INSERT INTO</strong> my_table (campo_1, ...) <strong>VALUES</strong> (valor_1, ...)             |  Insere dados na tablea                                  |
-|  <strong>USE</strong> my_bass_name                                                                       |  Acessa banco de dados                                   |
-|  <strong>UPDATE</strong> my_table <strong>SET</strong> nova definição <strong>WHERE</strong> parâmetro   |  Atualiza tabela de acordo com o parâmetro especificado  |
-|  <strong>DELETE FROM</strong> my_table <strong>WHERE</strong> parâmetro                                  |  Deleta elemento de acordo com o parâmetro especificado  |
+<h2> Comandos DML </h2>
+
+    --Insere dados na tablea  
+
+    INSERT INTO  <Tabela>
+  
+            (Campo_1, Campo_2, Campo_n)
+
+    VALUES  (Valor_1, Valor_2, Valor_n)
+
+<br>
+
+    --Atualiza tabela de acordo com o parâmetro especificado 
+
+    UPDATE  <tabela>
+    SET  <campo>  =  <expressão>
+    WHERE  <condição>
+
+<br>
+
+    --Deleta elemento de acordo com o parâmetro especificado 
+
+    DELETE FROM  <tabela>
+    WHERE  <condição>
 
 
 <h2> SQL Server Management Studio </h2>
