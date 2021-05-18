@@ -417,10 +417,21 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 
     SELECT * FROM Tabela WHERE condição;
 
-> Operadores Relacionais: <br><br>  >  |  >=  |  <  |  <= |  =  |  <> 
+
+<h2> Comandos DQL - Cláusula WHERE ( Operadores Relacionais ) </h2>
 
 
-<h2> Comandos DQL - A cláusula WHERE e os Operadores Lógicos </h2>
+|      O.R.     |     CONSULTA EM ÁLGEBRA RELACIONAL    |                   CONSULTA SQL                 |
+| ------------- | ------------------------------------- | ---------------------------------------------- |
+| <             |  σsalario < 2000 ( Agenda )           |   SELECT * FROM Agenda WHERE salario < 2000;   |
+| <=            |  σsalario <= 2000 ( Agenda )          |   SELECT * FROM Agenda WHERE salario <= 2000;  |
+| >             |  σsalario > 2000 ( Agenda )           |   SELECT * FROM Agenda WHERE salario > 2000;   |
+| >=            |  σsalario >= 2000 ( Agenda )          |   SELECT * FROM Agenda WHERE salario >= 2000;  |
+| =             |  σsalario = 2000 ( Agenda )           |   SELECT * FROM Agenda WHERE salario = 2000;   |
+| <>            |  σsalario <> 2000 ( Agenda )          |   SELECT * FROM Agenda WHERE salario <> 2000;  |
+
+
+<h2> Comandos DQL - Cláusula WHERE ( Operadores Lógicos ) </h2>
 
 
 |      O.R.     |        CONSULTA EM ÁLGEBRA RELACIONAL       |                       CONSULTA SQL
