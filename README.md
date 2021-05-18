@@ -352,7 +352,14 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 <h2> Comandos DQL - Álgebra Relacional </h2>
 
 
+A álgebra relacional é uma forma de cálculo sobre conjuntos ou relações. Proposta por E.F Codd como uma base para linguagens de consulta em banco de dados no anos 70.   
+
+
 <h2> Seleção (σ)</h2>
+
+<h2>σ </h2>predicado ( Relação )
+
+Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que satisfaçam determinada condição ou predicado. Sendo predicado a condição que será aplicada a seleção, e sendo a relação a relação ou tabela de onde serão obtidos os dados.
 
 
 <h2> Projeção (π)</h2>
@@ -373,7 +380,7 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 <h2> Comandos DQL - Cláusula GROUP BY </h2>
 
 
-<h2> SQL Server Management HAVING </h2>
+<h2> Comandos DQL - Cláusula HAVING </h2>
 
 
 <h2> Comandos DQL - Cláusula ORDER BY </h2>
@@ -384,6 +391,8 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 
 <h2> Restrição de Domínio </h2>
 
+
+<h2> SQL Server Management Studio </h2>
 
 
 O SQL Server Management Studio é um SGBDR, ou Sistema Gerenciador de Bancos de Dados Relacionais, que consiste em uma ferramenta de criação, desenvolvimento e manipulação de bancos de dados. Desenvolvida e mantida pela Microsoft, é usada para configurar, gerenciar e administrar todos os componentes do Microsoft SQL Server,
