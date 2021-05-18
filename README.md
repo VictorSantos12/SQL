@@ -451,7 +451,7 @@ Tem a função de agrupar dados semelhantes em uma consulta SQL
 
     SELECT * FROM Tabela GROUP BY coluna
 
-    Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda:
+Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda:
     
     SELECT Sexo, Count(*) AS 'Qtd.'
     FROM Agenda
