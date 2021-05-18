@@ -281,11 +281,13 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 
 <h2> Comandos DML </h2>
 
+
     --Insere dados na tablea  
 
     INSERT INTO  <Tabela>
   
-            (Campo_1, Campo_2, Campo_n)
+            (Campo_A1, Campo_A2, Campo_An)
+            (Campo_B1, Campo_B2, Campo_Bn)
 
     VALUES  (Valor_1, Valor_2, Valor_n)
 
@@ -303,6 +305,26 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 
     DELETE FROM  <tabela>
     WHERE  <condição>
+
+
+<h2> Comandos DQL </h2>
+
+    --Define método de consulta às tabelas criadas
+
+    SELECT <[tipo] [campos]> FROM <tabela/view> [<condição/ordem>];
+
+- tipo - parâmetro opcional que determina o tipo de registro (DISTINCT ou *)
+- campos - colunas da consulta
+- <tabela> - Nome das tabela a ser consultada
+- <condição> - Permite o estabelecimento dos critérios a seguir:
+- WHERE - Permite criar condições para filtrar dados utilizando operadores dos tipos:
+
+- Relacionais - (<, <=, >, >=. =, <>);
+- Lógicos - ([NOT] IN, [NOT] BETWEEN, [NOT] LIKE <%dado%>):
+
+- GROUP BY - Agrupa dados em uma consulta.
+- HAVING - Limita o resultado de uma consulta agrupada com GROUP BY.
+- ORDER BY - Especifica a coluna ou as colunas que serão ordenadas na consulta e a forma de ordenação(ascendente <ASC> ou descendente <DESC>).
 
 
 <h2> SQL Server Management Studio </h2>
