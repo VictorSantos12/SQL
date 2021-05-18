@@ -250,26 +250,26 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 
     --Cria tabela e define seus campos
 
-     CREATE TABLE my_table ( <campo1> <tipo> [NOT NULL] ,
-                             <campo2> <tipo> [NOT NULL] ,
-                             [PRIMARY KEY (campo1,campo2,...),
-                             [FOREIGN KEY (campo) REFERENCES tabela2 );
+    CREATE TABLE my_table ( <campo1> <tipo> [NOT NULL] ,
+                            <campo2> <tipo> [NOT NULL] ,
+                            [PRIMARY KEY (campo1,campo2,...),
+                            [FOREIGN KEY (campo) REFERENCES tabela2 );
 
-     --Adiciona um novo campo a tabela  
+    --Adiciona um novo campo a tabela  
 
-     ALTER TABLE my_table ADD  <campo1> <tipo>  [NOT NULL] 
+    ALTER TABLE my_table ADD  <campo1> <tipo>  [NOT NULL] 
 
-     --Redefine tipo da coluna
-
-     ALTER TABLE  my_table  ALTER COLUMN  <campo1>  <tipo>  
-     
-     --Apaga coluna especificada  
-       	  
-     ALTER TABLE  my_table  DROP COLUMN	<nome>	
-     
-     --Apaga tabela especificada    
-     		           
-     DROP TABLE   my_table                                                      
+    --Redefine tipo da coluna
+    
+    ALTER TABLE  my_table  ALTER COLUMN  <campo1>  <tipo>  
+    
+    --Apaga coluna especificada  
+      	  
+    ALTER TABLE  my_table  DROP COLUMN	<nome>	
+    
+    --Apaga tabela especificada    
+    		           
+    DROP TABLE   my_table                                                      
 
 
 |                                                 Comandos DML                                             |                          Descrição                       |
