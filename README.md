@@ -361,7 +361,10 @@ A álgebra relacional é uma forma de cálculo sobre conjuntos ou relações. Pr
      <img src="https://user-images.githubusercontent.com/61476935/118683819-0fc01e80-b7d8-11eb-8261-78944004a579.png">
    </div>
 
-Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que satisfaçam determinada condição ou predicado. Sendo predicado a condição que será aplicada a seleção, e sendo a relação a relação ou tabela de onde serão obtidos os dados.
+Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que satisfaçam determinada condição ou predicado. Sendo predicado a condição que será aplicada a seleção, e sendo a relação a relação ou tabela de onde serão obtidos os dados. Exemplo:
+
+
+    SELECT * FROM Agenda WHERE Sexo = 'F';
 
 
 <h2> Projeção (π)</h2>
@@ -371,6 +374,11 @@ Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que
      <img src="https://user-images.githubusercontent.com/61476935/118683920-28303900-b7d8-11eb-9863-f45a3f27b240.png">
    </div>
 
+É uma operação indicada pela letra grega pi (π) que visa a obtenção de dados referentes a mais de uma colunas de uma relação. Sendo coluna1, coluna2 as colunas a serem mostradas, e relação a relação ou tabela de onde serão obtidos os dados. Exemplo:
+
+
+    SELECT Matricula, Nome FROM Agenda;
+
 
 <h2> Seleção (σ) e Projeção (π) </h2>
 
@@ -378,6 +386,10 @@ Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que
    <div align="center">
      <img src="https://user-images.githubusercontent.com/61476935/118684011-3aaa7280-b7d8-11eb-8b51-b699785b4118.png">
    </div>
+
+Selecione todos os dados das colunas Matricula e Nome na tabela Agenda, apenas dos empregados que possuem sexo = 'F':
+
+    SELECT Matricula, Nome FROM Agenda WHERE sexo = 'F';
 
 
 <h2> Ordenação (τ) </h2>
@@ -387,10 +399,15 @@ Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que
      <img src="https://user-images.githubusercontent.com/61476935/118684095-501f9c80-b7d8-11eb-9ad1-cba6d8c26ba2.png">
    </div>
 
+É uma operação indicada pela letra grega tau (τ) que visa a ordenação dos dados consultados em uma relação. Sendo coluna – coluna a ser classificada, ord a ordem de classificação -> asc (Ascendente), desc (Descendente) e relação a relação ou tabela de onde serão obtidos os dados. Exemplo:
 
    <div align="center">
      <img src="https://user-images.githubusercontent.com/61476935/118684267-73e2e280-b7d8-11eb-8f47-f475f234227b.png">
    </div>
+
+Selecione todos os dados referentes as colunas Matricula e Nome, da tabela Agenda, ordenando a coluna nome na ascendente.
+
+    SELECT Matricula, Nome FROM Agenda ORDER BY Nome ASC;
 
 
 <h2> Comandos DQL - Cláusula WHERE </h2>
