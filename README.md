@@ -279,7 +279,7 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
     
     --Apaga coluna especificada  
       	  
-    ALTER TABLE  my_table  DROP COLUMN <nome>
+    ALTER TABLE  my_table  DROP COLUMN  <nome>
 
 <br>
     
