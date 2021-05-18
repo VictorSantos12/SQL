@@ -315,8 +315,8 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 
 - [tipo] - parâmetro opcional que determina o tipo de registro (DISTINCT ou *)
 - [campos] - colunas da consulta
-- <tabela> - Nome das tabela a ser consultada
-- <condição> - Permite o estabelecimento dos critérios a seguir:
+- tabela - Nome das tabela a ser consultada
+- condição - Permite o estabelecimento dos critérios a seguir:
 - WHERE - Permite criar condições para filtrar dados utilizando operadores dos tipos:
 
 - Relacionais - (<, <=, >, >=. =, <>);
@@ -325,6 +325,28 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 - GROUP BY - Agrupa dados em uma consulta.
 - HAVING - Limita o resultado de uma consulta agrupada com GROUP BY.
 - ORDER BY - Especifica a coluna ou as colunas que serão ordenadas na consulta e a forma de ordenação(ascendente <ASC> ou descendente <DESC>).
+
+
+<h2> Cnsultando Dados </h2>
+
+    --Seleciona todas as colunas * de uma tabela
+
+    SELECT  *  FROM  <Tabela>;
+    
+    --Seleciona os dados da coluna1 de uma tabela, sem repetição
+
+    SELECT  DISTINCT  Coluna1
+    FROM  <Tabela>;
+    
+    --Selecionando os dados da colunas específicas de uma tabela
+
+    SELECT  <Coluna1, Coluna2>
+    FROM  <Tabela>;
+    
+    --Selecionando e nomeando colunas de uma tabela
+    
+    SELECT  <Coluna1 AS Nome1, Coluna2 AS Nome2>
+    FROM  <Tabela>;
 
 
 <h2> SQL Server Management Studio </h2>
