@@ -443,22 +443,19 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 | NOT or I=     |                                 Nega o predicado nas consultas.                                          |
 
 
-
-<h2> Comandos DQL - Cláusula WHERE </h2>
+<h2> Comandos DQL - Cláusula GROUP BY </h2>
 
 
 Tem a função de agrupar dados semelhantes em uma consulta SQL
 
     SELECT * FROM Tabela GROUP BY coluna
 
-Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda:
+Exemplo: Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda
     
     SELECT Sexo, Count(*) AS 'Qtd.'
     FROM Agenda
     GROUP BY Sexo;
-
-<h2> Comandos DQL - Cláusula GROUP BY </h2>
-
+    
 
 <h2> Comandos DQL - Cláusula HAVING </h2>
 
