@@ -410,7 +410,7 @@ Selecione todos os dados referentes as colunas Matricula e Nome, da tabela Agend
     SELECT Matricula, Nome FROM Agenda ORDER BY Nome ASC;
 
 
-<h2> Comandos DQL - Cláusula WHERE </h2>
+<h2> Cláusula WHERE </h2>
 
 
 Tem a função de estabelecer um predicado, condição para filtrar dados através da utilização de operadores lógicos, em uma consulta SQL.
@@ -418,7 +418,7 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
     SELECT * FROM Tabela WHERE condição;
 
 
-<h2> Comandos DQL - Cláusula WHERE ( Operadores Relacionais ) </h2>
+<h2> Cláusula WHERE ( Operadores Relacionais ) </h2>
 
 
 |      O.R.     |     CONSULTA EM ÁLGEBRA RELACIONAL    |                   CONSULTA SQL                 |
@@ -431,7 +431,7 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 | <>            |  σsalario <> 2000 ( Agenda )          |   SELECT * FROM Agenda WHERE salario <> 2000;  |
 
 
-<h2> Comandos DQL - Cláusula WHERE ( Operadores Lógicos ) </h2>
+<h2> Cláusula WHERE ( Operadores Lógicos ) </h2>
 
 
 |      O.R.     |        CONSULTA EM ÁLGEBRA RELACIONAL       |                       CONSULTA SQL
@@ -443,7 +443,7 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 | NOT or I=     |                                 Nega o predicado nas consultas.                                          |
 
 
-<h2> Comandos DQL - Cláusula GROUP BY </h2>
+<h2> Cláusula GROUP BY </h2>
 
 
 Tem a função de agrupar dados semelhantes em uma consulta SQL
@@ -457,7 +457,7 @@ Exemplo: Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda
     GROUP BY Sexo;
 
 
-<h2> Comandos DQL - Cláusula HAVING </h2>
+<h2> Cláusula HAVING </h2>
 
 
 Tem função semelhante a cláusula WHERE, porém sua aplicação se restringe a consulta agrupadas (GROUP BY).
@@ -474,7 +474,7 @@ Exemplo: Conte a quantidade de pessoas cadastradas, por profissão, na tabela Ag
     Obs. A cláusula HAVING funciona como a cláusula WHERE em tabelas agrupadas.
 
 
-<h2> Comandos DQL - Cláusula ORDER BY </h2>
+<h2> Cláusula ORDER BY </h2>
 
 Tem função de ordenar dados em uma consulta SQL. Pode utilizar o complemento ASC (para ordenação ascendente) e DESC (para ordenação descendente).
 
@@ -489,7 +489,7 @@ Exemplo: Selecione as colunas Profissao e Nome, na tabela Agenda, ordenando Prof
     Obs. A cláusula ASC pode ser omitida no caso de ordenação ascendente.
 
 
-<h2> Comandos DQL - Cláusula TOP(n) </h2>
+<h2> Cláusula TOP(n) </h2>
 
 
 Tem função de selecionar as n primeiras tuplas de uma consulta.
@@ -502,7 +502,7 @@ Exemplo: Mostre todos os registros dos três maiores salários na tabela Agenda.
     FROM Agenda
     ORDER BY Salario DESC;
 
-    
+
 <h2> Restrição de Domínio </h2>
 
 
