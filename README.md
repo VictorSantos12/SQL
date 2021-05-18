@@ -313,8 +313,8 @@ Se refere aos comandos de gerenciamento de transações em bancos de dados, pode
 
     SELECT <[tipo] [campos]> FROM <tabela/view> [<condição/ordem>];
 
-- tipo - parâmetro opcional que determina o tipo de registro (DISTINCT ou *)
-- campos - colunas da consulta
+- [tipo] - parâmetro opcional que determina o tipo de registro (DISTINCT ou *)
+- [campos] - colunas da consulta
 - <tabela> - Nome das tabela a ser consultada
 - <condição> - Permite o estabelecimento dos critérios a seguir:
 - WHERE - Permite criar condições para filtrar dados utilizando operadores dos tipos:
