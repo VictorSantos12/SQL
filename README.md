@@ -358,7 +358,7 @@ A álgebra relacional é uma forma de cálculo sobre conjuntos ou relações. Pr
 <h2> Seleção (σ)</h2>
 
    <div align="center">
-     <img width="90%" src="https://user-images.githubusercontent.com/61476935/118680798-6aa44680-b7d5-11eb-93e9-ebd2eb0446a9.png">
+     <img src="https://user-images.githubusercontent.com/61476935/118683819-0fc01e80-b7d8-11eb-8261-78944004a579.png">
    </div>
 
 Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que satisfaçam determinada condição ou predicado. Sendo predicado a condição que será aplicada a seleção, e sendo a relação a relação ou tabela de onde serão obtidos os dados.
@@ -367,10 +367,30 @@ Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que
 <h2> Projeção (π)</h2>
 
 
+   <div align="center">
+     <img src="https://user-images.githubusercontent.com/61476935/118683920-28303900-b7d8-11eb-9863-f45a3f27b240.png">
+   </div>
+
+
 <h2> Seleção (σ) e Projeção (π) </h2>
 
 
+   <div align="center">
+     <img src="https://user-images.githubusercontent.com/61476935/118684011-3aaa7280-b7d8-11eb-8b51-b699785b4118.png">
+   </div>
+
+
 <h2> Ordenação (τ) </h2>
+
+
+   <div align="center">
+     <img src="https://user-images.githubusercontent.com/61476935/118684095-501f9c80-b7d8-11eb-9ad1-cba6d8c26ba2.png">
+   </div>
+
+
+   <div align="center">
+     <img src="https://user-images.githubusercontent.com/61476935/118684267-73e2e280-b7d8-11eb-8f47-f475f234227b.png">
+   </div>
 
 
 <h2> Comandos DQL - Cláusula WHERE </h2>
