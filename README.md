@@ -240,52 +240,52 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 
     --Cria banco de dados 
 
-    CREATE DATABASE  my_base_name  
+    CREATE DATABASE  meu_banco 
 
 <br>
 
     --Acessa banco de dados     
     
-    USE  my_bass_name 
+    USE  meu_banco  
 
 <br>
 
     --Altera nome do banco dedados 
 
-    ALTER DATABASE  my_base_name  MODIFY NAME  =  my_new_base_name  
+    ALTER DATABASE  meu_banco  MODIFY NAME  =  meu_novo_banco  
 
 <br>
 
     --Cria tabela e define seus campos
 
-    CREATE TABLE my_table ( <campo1> <tipo> [NOT NULL] ,
-                            <campo2> <tipo> [NOT NULL] ,
-                            [PRIMARY KEY (campo1,campo2,...),
-                            [FOREIGN KEY (campo) REFERENCES tabela2 );
+    CREATE TABLE  tabela1  ( <campo1> <tipo> [NOT NULL] ,
+                             <campo2> <tipo> [NOT NULL] ,
+                             [PRIMARY KEY (campo1,campo2,...),
+                             [FOREIGN KEY (campo) REFERENCES tabela2 );
 
 <br>
 
     --Adiciona um novo campo a tabela  
 
-    ALTER TABLE my_table ADD  <campo1> <tipo>  [NOT NULL] 
+    ALTER TABLE  tabela1  ADD  <campo1>  <tipo>  [NOT NULL] 
 
 <br>
 
     --Redefine tipo da coluna
 
-    ALTER TABLE  my_table  ALTER COLUMN  <campo1>  <tipo>
+    ALTER TABLE  tabela1  ALTER COLUMN  <campo1>  <tipo>
 
 <br>
     
     --Apaga coluna especificada  
       	  
-    ALTER TABLE  my_table  DROP COLUMN  <nome>
+    ALTER TABLE  tabela1  DROP COLUMN  <nome>
 
 <br>
     
     --Apaga tabela especificada    
     		           
-    DROP TABLE  my_table                                                      
+    DROP TABLE  tabela1                                                      
 
 
 |                                                 Comandos DML                                             |                          Descrição                       |
