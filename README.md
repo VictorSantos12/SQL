@@ -236,14 +236,14 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
  
 |                         Comandos DDL                         |               Descrição                |
 | ------------------------------------------------------------ | -------------------------------------- |
-|  CREATE DATABASE my_base_name                                |  Cria banco de dados                   |
-|  USE my_bass_name                                            |  Acessa banco de dados                 |
-|  ALTER DATABASE my_base_name MODIFY NAME = my_new_base_name  |  Altera nome do banco dedados          |
-|  CREATE TABLE my_table ( campo  tipo  [NOT NULL], ... )      |  Cria tabela e define seus campos      |
-|  ALTER TABLE my_table ADD  nome  tipo  [NOT NULL]            |  Adiciona um novo campo a tabela       |   
-|  ALTER TABLE my_table	ALTER COLUMN nome VARCHAR(50)    	     |  Redefine tipo da coluna               |
-|  ALTER TABLE my_table	DROP COLUMN	nome					             |  Apaga coluna especificada             |
-|  DROP TABLE my_table                                         |  Apaga tabela especificada             |
+|  <strong>CREATE DATABASE</strong> my_base_name                                |  Cria banco de dados                   |
+|  <strong>USE</strong> my_bass_name                                            |  Acessa banco de dados                 |
+|  <strong>ALTER DATABASE</strong> my_base_name MODIFY NAME = my_new_base_name  |  Altera nome do banco dedados          |
+|  <strong>CREATE TABLE</strong> my_table ( campo  tipo  [NOT NULL], ... )      |  Cria tabela e define seus campos      |
+|  <strong>ALTER TABLE</strong> my_table ADD  nome  tipo  [NOT NULL]            |  Adiciona um novo campo a tabela       |   
+|  <strong>ALTER TABLE</strong> my_table	ALTER COLUMN nome VARCHAR(50)    	     |  Redefine tipo da coluna               |
+|  <strong>ALTER TABLE</strong> my_table	DROP COLUMN	nome					             |  Apaga coluna especificada             |
+|  <strong>DROP TABLE</strong> my_table                                         |  Apaga tabela especificada             |
 
 
 |                         Comandos DML                         |                          Descrição                       |
