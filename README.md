@@ -234,27 +234,25 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 <h2> Estudando Comandos </h2>
 
  
-|                         Comandos (DDL)                       |               Descrição                |
+|                         Comandos DDL                         |               Descrição                |
 | ------------------------------------------------------------ | -------------------------------------- |
 |  CREATE DATABASE my_base_name                                |  Cria banco de dados                   |
 |  USE my_bass_name                                            |  Acessa banco de dados                 |
-|  ALTER DATABASE my_base_name MODIFY NAME = my_new_base_name  |  Altera banco nomw do dados            |
+|  ALTER DATABASE my_base_name MODIFY NAME = my_new_base_name  |  Altera nome do banco dedados          |
 |  CREATE TABLE my_table ( campo  tipo  [NOT NULL], ... )      |  Cria tabela e define seus campos      |
 |  ALTER TABLE my_table ADD  nome  tipo  [NOT NULL]            |  Adiciona um novo campo a tabela       |   
-|  ALTER TABLE my_table	ALTER COLUMN nome VARCHAR(50)    	   |  Redfine tipo da coluna                |
-|  ALTER TABLE my_table	DROP COLUMN	nome					   |  Apaga coluna especificada             |
+|  ALTER TABLE my_table	ALTER COLUMN nome VARCHAR(50)    	     |  Redefine tipo da coluna               |
+|  ALTER TABLE my_table	DROP COLUMN	nome					             |  Apaga coluna especificada             |
 |  DROP TABLE my_table                                         |  Apaga tabela especificada             |
 
-|                         Comandos (DML)                       |               Descrição                |
-| ------------------------------------------------------------ | -------------------------------------- |
-|  CREATE DATABASE my_base_name                                |  Cria banco de dados                   |
-|  USE my_bass_name                                            |  Acessa banco de dados                 |
-|  ALTER DATABASE my_base_name MODIFY NAME = my_new_base_name  |  Altera banco nomw do dados            |
-|  CREATE TABLE my_table ( campo  tipo  [NOT NULL], ... )      |  Cria tabela e define seus campos      |
-|  ALTER TABLE my_table ADD  nome  tipo  [NOT NULL]            |  Adiciona um novo campo a tabela       |   
-|  ALTER TABLE my_table	ALTER COLUMN nome VARCHAR(50)    	   |  Redfine tipo da coluna                |
-|  ALTER TABLE my_table	DROP COLUMN	nome					   |  Apaga coluna especificada             |
-|  DROP TABLE my_table                                         |  Apaga tabela especificada             |
+
+|                         Comandos DML                         |                          Descrição                       |
+| ------------------------------------------------------------ | -------------------------------------------------------- |
+|  INSERT INTO my_table (campo_1, ...)  VALUES (valor_1, ...)  |  Insere dados na tablea                                  |
+|  USE my_bass_name                                            |  Acessa banco de dados                                   |
+|  UPDATE my_table  SET nova definição  WHERE  parâmetro       |  Atualiza tabela de acordo com o parâmetro especificado  |
+|  DELETE FROM my_table WHERE parâmetro                        |  Deleta elemento de acordo com o parâmetro especificado  |
+
 
     
      
