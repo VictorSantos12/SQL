@@ -449,7 +449,7 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 
 Tem a função de agrupar dados semelhantes em uma consulta SQL
 
-> SELECT * FROM Tabela GROUP BY coluna
+    SELECT * FROM Tabela GROUP BY coluna
 
     Conte a quantidade de pessoas cadastradas, por sexo, na tabela Agenda:
     
