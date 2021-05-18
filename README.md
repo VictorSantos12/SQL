@@ -429,7 +429,7 @@ Tem a função de estabelecer um predicado, condição para filtrar dados atrav�
 | BETWEEN       |  σsalario BETWEEN 1500 AND 2000 ( Agenda )  |  SELECT * FROM Agenda WHERE salario BETWEEN 1500 AND 2000; | 
 | LIKE ( %, _ ) |  σ nome LIKE '%silva%' ( Agenda )           |  SELECT * FROM Agenda WHERE nome LIKE ‘%silva%';           |
 | IS NULL       |  σsalario IS NULL ( Agenda )                |  SELECT * FROM Agenda WHERE salario IS NULL;               |
-| NOT or I=     |  Nega o predicado nas consultas.                                                                         |
+| NOT or I=     |                                 Nega o predicado nas consultas.                                          |
 
 
 
