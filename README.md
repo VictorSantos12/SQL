@@ -248,7 +248,10 @@ Documentação e processo de instalação da versão 2021: [https://docs.microso
 
 |                         Comandos DML                         |                          Descrição                       |
 | ------------------------------------------------------------ | -------------------------------------------------------- |
-|  INSERT INTO my_table (campo_1, ...)  VALUES (valor_1, ...)  |  Insere dados na tablea                                  |
+|  INSERT INTO my_table                                        |                                                          |
+|             (campo_1, ...)                                   |                                                          |
+|                                                              |                                                          |
+|  VALUES     (valor_1, ...)                                   |  Insere dados na tablea                                  |
 |  USE my_bass_name                                            |  Acessa banco de dados                                   |
 |  UPDATE my_table  SET nova definição  WHERE  parâmetro       |  Atualiza tabela de acordo com o parâmetro especificado  |
 |  DELETE FROM my_table WHERE parâmetro                        |  Deleta elemento de acordo com o parâmetro especificado  |
