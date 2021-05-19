@@ -387,7 +387,7 @@ Indicada pela letra grega sigma (σ) a operação visa a obtenção de dados que
      <img src="https://user-images.githubusercontent.com/61476935/118684011-3aaa7280-b7d8-11eb-8b51-b699785b4118.png">
    </div>
 
-Selecione todos os dados das colunas Matricula e Nome na tabela Agenda, apenas dos empregados que possuem sexo = 'F':
+Exemplo: Selecione todos os dados das colunas Matricula e Nome na tabela Agenda, apenas dos empregados que possuem sexo = 'F':
 
     SELECT Matricula, Nome FROM Agenda WHERE sexo = 'F';
 
@@ -405,7 +405,7 @@ Selecione todos os dados das colunas Matricula e Nome na tabela Agenda, apenas d
      <img src="https://user-images.githubusercontent.com/61476935/118684267-73e2e280-b7d8-11eb-8f47-f475f234227b.png">
    </div>
 
-Selecione todos os dados referentes as colunas Matricula e Nome, da tabela Agenda, ordenando a coluna nome na ascendente.
+Exemplo: Selecione todos os dados referentes as colunas Matricula e Nome, da tabela Agenda, ordenando a coluna nome na ascendente.
 
     SELECT Matricula, Nome FROM Agenda ORDER BY Nome ASC;
 
@@ -504,6 +504,73 @@ Exemplo: Mostre todos os registros dos três maiores salários na tabela Agenda.
 
 
 <h2> Restrição de Domínio </h2>
+
+
+Domínio é o conjunto de todos os valores possíveis para um determinado atributo. Exemplo:
+
+    INTEGER, CHAR(), VARCHAR(), DATE(), TIME(), etc.
+
+Já a restrição desse domínio é uma limitação aplicada sobre o domínio do atributo.
+
+    NOT NULL, PRIMARY KEY, FOREIGN KEY, CHECK, etc.
+
+
+<h2> Null </h2>
+
+
+Torna o preenchimento do atributo obrigatório.
+
+    CREATE TABLE Pessoal ( Mt_Pessoal INTEGER,
+                           Nm_Pessoal VARCHAR(50) NOT NULL,
+                           Sx_Pessoal CHAR(1) );
+    
+    -----------------------------------------------------------------
+    INSERT INTO Pessoal ( Mt_Pessoal, Sx_Pessoal )
+                 VALUES ( 1001 , 'M' );
+    
+    -----------------------------------------------------------------
+    ALTER TABLE Pessoal ALTER COLUMN Mt_Pessoal INTEGER NOT NULL;
+
+
+<h2> Default </h2>
+
+Define um valor padrão a ser utilizado pelo atributo.
+    
+    CREATE TABLE Pessoal ( Mt_Pessoal INTEGER,
+                           Nm_Pessoal VARCHAR(50) NOT NULL,
+                           Sx_Pessoal CHAR(1) DEFAULT('M') );
+    
+    ------------------------------------------------------------------
+    CREATE TABLE Pessoal ( Mt_Pessoal INTEGER,
+                           Nm_Pessoal VARCHAR(50) NOT NULL,
+                           Sx_Pessoal CHAR(1) CONSTRAINT DF_Sx_Pessoal DEFAULT('M') );
+
+
+<h2> PRIMARY KEY </h2>
+
+
+Define o atributo como chave primária.
+
+    CREATE TABLE Cargo ( Cd_Cargo INTEGER PRIMARY KEY,
+                         Ds_Cargo VARCHAR(50) NOT NULL );
+    
+    ----------------------------------------------------------------------
+    CREATE TABLE Cargo ( Cd_Cargo INTEGER CONSTRAINT PK_Cargo PRIMARY KEY,
+                         Ds_Cargo VARCHAR(50) NOT NULL );
+
+
+<h2> FOREIGN KEY </h2>
+
+
+Define o atributo como chave estrangeira.
+
+    CREATE TABLE Pessoal ( Mt_Pessoal INTEGER PRIMARY KEY,
+                           Nm_Pessoal VARCHAR(50) NOT NULL, Cd_Cargo INTEGER REFERENCES Cargo(Cd_Cargo) );
+    
+    ----------------------------------------------------------------------
+    CREATE TABLE Pessoal ( Mt_Pessoal INTEGER PRIMARY KEY,
+                           Nm_Pessoal VARCHAR(50) NOT NULL,
+                           Cd_Cargo INTEGER CONSTRAINT FK_Cargo REFERENCES Cargo(Cd_Cargo) );
 
 
 <h2> SQL Server Management Studio </h2>
