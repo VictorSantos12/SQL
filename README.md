@@ -564,13 +564,33 @@ Define o atributo como chave primária.
 
 Define o atributo como chave estrangeira.
 
-    CREATE TABLE Pessoal ( Mt_Pessoal INTEGER PRIMARY KEY,
-                           Nm_Pessoal VARCHAR(50) NOT NULL, Cd_Cargo INTEGER REFERENCES Cargo(Cd_Cargo) );
-    
+    table1 
+
+    | Id_table1 (PK, int, not null) 
+    | Dt_table1 (date, null)
+
+    table2
+
+    | id_table2 (PK, int, not null) 
+    | Dt_table2 (date, null)
+    | FOREIGN KEY
+
     ----------------------------------------------------------------------
-    CREATE TABLE Pessoal ( Mt_Pessoal INTEGER PRIMARY KEY,
-                           Nm_Pessoal VARCHAR(50) NOT NULL,
-                           Cd_Cargo INTEGER CONSTRAINT FK_Cargo REFERENCES Cargo(Cd_Cargo) );
+    ALTER TABLE <table2> ADD CONSTRAINT identificador FOREIGN KEY (Id_table1)
+    REFERENCE <table1> (Id_table1)
+
+    Resultado
+
+    table1 
+
+    | Id_table1 (PK, int, not null) 
+    | Dt_table1 (date, null)
+
+    table2
+
+    | id_table2 (PK, int, not null) 
+    | Dt_table2 (date, null)
+    | Id_table1 (FK, int, not null)
 
 
 <h2> SQL Server Management Studio </h2>
