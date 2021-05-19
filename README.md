@@ -578,7 +578,7 @@ Define o atributo como chave estrangeira.
 <br>
 
     ALTER TABLE <table2> ADD CONSTRAINT identificador FOREIGN KEY (Id_table1)
-    REFERENCE <table1> (Id_table1)
+    REFERENCES <table1> (Id_table1)
 <br>
 
     Resultado
