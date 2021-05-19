@@ -575,9 +575,11 @@ Define o atributo como chave estrangeira.
     | Dt_table2 (date, null)
     | FOREIGN KEY
 
-    ----------------------------------------------------------------------
+<br>
+
     ALTER TABLE <table2> ADD CONSTRAINT identificador FOREIGN KEY (Id_table1)
     REFERENCE <table1> (Id_table1)
+<br>
 
     Resultado
 
