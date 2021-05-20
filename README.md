@@ -598,7 +598,7 @@ Define o atributo como chave estrangeira.
 <h2> Cláusula JOIN</h2>
 
 
-A cláusula JOIN permite que os dados de várias tabelas sejam combinados com base na relação existente entre elas. Sendo Assossiado a outras cláusulas como o FROM, IN, AS, ON, WHERE e entre outras; a cláusula JOIN permite a combinação de informações contidas em diferentes tabelas relacionadas. Exemplos:
+A cláusula JOIN permite que os dados de várias tabelas sejam combinados com base na relação existente entre elas. Sendo Associado a outras cláusulas como o FROM, IN, AS, ON, WHERE e entre outras; a cláusula JOIN permite a combinação de informações contidas em diferentes tabelas relacionadas. Exemplos:
 
     SELECT *
     FROM CLIENTES AS C
