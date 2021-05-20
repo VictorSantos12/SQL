@@ -595,6 +595,86 @@ Define o atributo como chave estrangeira.
     | Id_table1 (FK, int, not null)
 
 
+<h2> Cláusula JOIN</h2>
+
+
+A cláusula JOIN permite que os dados de várias tabelas sejam combinados com base na relação existente entre elas. Sendo Assossiado a outras cláusulas como o FROM, IN, AS, ON, WHERE e entre outras; a cláusula JOIN permite a combinação de informações contidas em diferentes tabelas relacionadas. Exemplos:
+
+    SELECT *
+    FROM CLIENTES AS C
+    JOIN PEDIDOS AS P ON C.IDCLIENTE = P.IDPEDIDO
+
+    -------------------------------------------------------
+
+    SELECT C.NOME, C.STATUS, P.DESCRICAO, P.VALOR
+    FROM CLIENTES AS C
+    JOIN PEDIDOS AS P ON C.IDCLIENTE = P.IDPEDIDO
+
+    -------------------------------------------------------
+
+    SELECT CLIENTES.IDCLIENTE, CLIENTES.NOME, PEDIDOS.DESCRICAO, PEDIDOS.VALOR
+    FROM CLIENTES, PEDIDOS
+    WHERE CLIENTES.IDCLIENTE = PEDIDOS.IDPEDIDO AND PEDIDOS.VALOR > 50.00
+
+Há três tipos básicos de consulta por junção no SQL:
+
+ - INNER JOIN
+
+ - OUTER JOIN (LEFT, RIGHT e FULL)
+
+ - CROSS JOIN
+
+
+<h2> INNER JOIN </h2>
+
+
+A cláusula INNER JOIN permite usar um operador de comparação para comparar os valores de colunas provenientes de tabelas associadas. Por meio desta cláusula, os registros de duas tabelas são usados para que sejam gerados os dados relacionados de ambas. Usa-se as cláusulas WHERE e FROM para especificar esse tipo de associação.
+
+    SELECT marcas.nome, carros.modelo
+    FROM marcas
+    INNER JOIN carros ON carros.marca = marcas.marca
+
+
+<h2> LEFT [OUTER] JOIN </h2>
+
+
+A cláusula LEFT JOIN ou LEFT OUTER JOIN permite obter não apenas os dados relacionados de duas tabelas, mas também os dados não relacionados encontrados na tabela à esquerda da cláusula JOIN. Caso não existam dados relacionados entre as tabelas à esquerda e a direita do JOIN, os valores resultantes de todas as colunas da lista de seleção da tabela à direita serão nulos.
+
+    SELECT m.nome, c.modelo
+    FROM marcas AS m
+    LEFT JOIN carros AS c ON c.marca = m.marca;
+
+
+<h2> RIGHT [OUTER] JOIN </h2>
+
+
+Ao contrário do LEFT JOIN, a cláusula RIGHT JOIN ou RIGHT OUTER JOIN retorna todos os dados encontrados na tabela à direita de JOIN. Caso não existam dados associados entre as tabelas à esquerda e à direita de JOIN, serão retornados valores nulos.
+
+    SELECT m.nome, c.modelo
+    FROM marcas AS m
+    RIGHT JOIN carros AS c ON c.marca = m.marca;
+
+
+<h2> FULL [OUTER] JOIN </h2>
+
+   
+Todas as linhas de dados da tabela à esquerda de JOIN e da tabela à direita serão retornadas pela cláusula FULL JOIN ou FULL OUTER JOIN. Caso uma linha de dados não esteja associada a qualquer linha da outra tabela, os valores das colunas a lista de seleção serão nulos. Caso contrário, os valores obtidos serão baseados nas tabelas usadas como referência.
+
+    SELECT m.nome, c.modelo
+    FROM marcas AS m
+    FULL JOIN carros AS c ON c.marca = m.marca;
+
+
+<h2> CROSS JOIN </h2>
+
+
+Todos os dados da tabela à esquerda de JOIN são cruzados com os dados da tabela à direita de JOIN por meio do CROSS JOIN, também conhecido como produto cartesiano. É possível cruzarmos informações de duas ou mais tabelas.
+
+    SELECT m.nome, c.modelo
+    FROM marcas AS m
+    CROSS JOIN carros AS c;
+
+
 <h2> SQL Server Management Studio </h2>
 
 
